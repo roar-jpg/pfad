@@ -1,0 +1,25 @@
+services:
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    networks:
+      - app-network
+
+  napochat:
+    build: .
+    depends_on:
+      - ollama
+    ports:
+      - "8501:8501"
+    environment:
+      OLLAMA_HOST: "http://ollama:11434"
+      API_KEY: "xxxxxxxxxx"  # Replace with API key
+    networks:
+      - app-network
+
+networks:
+  app-network: {}
+
+volumes:
+  ollama: {}  # Properly define the volume as an empty mapping
