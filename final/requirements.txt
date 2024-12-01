@@ -1,9 +1,0 @@
-audio_recorder_streamlit
-azure-keyvault-secrets
-azure-mgmt-resource
-azure-storage-blob
-azure-cognitiveservices-speech
-langchain_community
-langchain_core
-langchain_ollama
-streamlit
