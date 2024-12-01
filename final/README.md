@@ -35,12 +35,7 @@ As you might know, Napoleon was great in his time—assertive, proud, and a mast
      ```bash
      docker ps
      ```
-
-     ``` 
-    CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS      PORTS                      NAMES
-    26a689de4907   ollama/ollama    "/bin/ollama serve"      4 minutes ago   Up About a minute   0.0.0.0:11434->11434/tcp   final-ollama-1
-     ```
-
+   
    - Access the `ollama` container:  
      ```bash
      docker exec -it <ollama_container_id> bash
